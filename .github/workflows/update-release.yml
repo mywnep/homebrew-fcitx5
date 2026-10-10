@@ -43,6 +43,7 @@ jobs:
           delete-branch: true
           commit-message: "chore(casks): update Fcitx5 and matching Rime stable release"
           title: Update Fcitx5 and matching Rime stable release
+          assignees: mywnep
           body-path: ${{ runner.temp }}/fcitx5-upgrade-pr.md
           add-paths: |
             Casks/fcitx5-macos.rb
