@@ -1,7 +1,7 @@
 cask "fcitx5-macos-rime" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.4.0"
+  version "0.4.1"
   sha256 arm:   "54c3d0aa39890d2fdb4695838053784fc89521bf2c645dd5d3226bcafdf94d82",
          intel: "eec4675284d4e8ef4f341fc3346db2158c5df56789391a1d1f4e529bfee0758c"
 

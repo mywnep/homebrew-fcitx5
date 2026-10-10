@@ -1,7 +1,7 @@
 cask "fcitx5-macos" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.4.0"
+  version "0.4.1"
   sha256 arm:   "0696b46ea02e5bcc403f2bdfad2017b68210250b918ed3e02a8a4bf66d57ff97",
          intel: "747424323831da6f09247ebb55037951a0513b79f2ce0438befdab2ee5b95759"
 
