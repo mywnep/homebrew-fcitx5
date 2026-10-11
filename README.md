@@ -10,6 +10,7 @@ Add the tap and install Fcitx5:
 
 ```sh
 brew tap mywnep/fcitx5
+brew trust --cask mywnep/fcitx5/fcitx5-macos
 brew install --cask mywnep/fcitx5/fcitx5-macos
 ```
 
@@ -18,6 +19,7 @@ Fcitx5 is installed at `/Library/Input Methods/Fcitx5.app`. Installation may req
 To install Rime:
 
 ```sh
+brew trust --cask mywnep/fcitx5/fcitx5-macos-rime
 brew install --cask mywnep/fcitx5/fcitx5-macos-rime
 ```
 
@@ -51,3 +53,10 @@ brew uninstall --cask mywnep/fcitx5/fcitx5-macos
 After uninstalling Fcitx5, remove any remaining Fcitx5 input source from System Settings and log out. If you only uninstall Rime, restart Fcitx5.
 
 Uninstallation preserves user configuration, custom schemas, dictionaries, and other plugins, including user data in `~/.config/fcitx5`, `~/.local/share/fcitx5`, and `~/Library/fcitx5`. Rime's plugin symlinks are removed automatically. Using `--zap` when uninstalling Fcitx5 additionally moves only `~/Library/fcitx5/cache` to the Trash.
+
+## References
+
+- [Fcitx5 macOS](https://github.com/fcitx/fcitx5-macos): upstream project.
+- [Fcitx5 macOS documentation](https://fcitx-contrib.github.io/docs/): usage and configuration guides (Chinese).
+- [fcitx5-plugins](https://github.com/fcitx-contrib/fcitx5-plugins): upstream plugin packages, including Rime.
+- [Fcitx5 macOS Installer](https://github.com/fcitx-contrib/fcitx5-macos-installer): graphical installer maintained by fcitx-contrib and linked from the upstream README.

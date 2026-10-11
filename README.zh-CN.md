@@ -10,6 +10,7 @@
 
 ```sh
 brew tap mywnep/fcitx5
+brew trust --cask mywnep/fcitx5/fcitx5-macos
 brew install --cask mywnep/fcitx5/fcitx5-macos
 ```
 
@@ -18,6 +19,7 @@ Fcitx5 安装到 `/Library/Input Methods/Fcitx5.app`，安装时可能需要管�
 需要 Rime 时安装：
 
 ```sh
+brew trust --cask mywnep/fcitx5/fcitx5-macos-rime
 brew install --cask mywnep/fcitx5/fcitx5-macos-rime
 ```
 
@@ -51,3 +53,10 @@ brew uninstall --cask mywnep/fcitx5/fcitx5-macos
 卸载本体后，在系统设置中移除残留的 Fcitx5 输入源，并注销登录。仅卸载 Rime 时，重启 Fcitx5 即可。
 
 卸载会保留用户配置、自定义方案、词库和其他插件，包括 `~/.config/fcitx5`、`~/.local/share/fcitx5` 和 `~/Library/fcitx5` 中的用户数据。Rime 的程序链接会自动清理。本体卸载时加 `--zap`，仅额外将 `~/Library/fcitx5/cache` 移入废纸篓。
+
+## 参考资源
+
+- [Fcitx5 macOS](https://github.com/fcitx/fcitx5-macos)：上游项目。
+- [Fcitx5 macOS 文档](https://fcitx-contrib.github.io/docs/)：使用与配置指南。
+- [fcitx5-plugins](https://github.com/fcitx-contrib/fcitx5-plugins)：包含 Rime 在内的上游插件包。
+- [Fcitx5 macOS Installer](https://github.com/fcitx-contrib/fcitx5-macos-installer)：fcitx-contrib 维护的图形安装器，上游 README 中提供了入口。
