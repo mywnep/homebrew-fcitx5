@@ -1,9 +1,9 @@
 cask "fcitx5-macos-rime" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.4.0"
-  sha256 arm:   "54c3d0aa39890d2fdb4695838053784fc89521bf2c645dd5d3226bcafdf94d82",
-         intel: "eec4675284d4e8ef4f341fc3346db2158c5df56789391a1d1f4e529bfee0758c"
+  version "0.4.1"
+  sha256 arm:   "bff553cf81334102c011edabc3eb75d5a536cadb183701ef42c9616b240266c6",
+         intel: "4f77febe901261438c3b0fed99b9cacf5e657371cc61982c6dd7edb1faee5e6e"
 
   url "https://github.com/fcitx-contrib/fcitx5-plugins/releases/download/macos-#{version}/rime-#{arch}.tar.bz2"
   name "Fcitx5 macOS Rime"
@@ -37,7 +37,7 @@ cask "fcitx5-macos-rime" do
     package_root=#{caskroom_path.to_s.shellescape}
     destination=#{"#{Dir.home}/Library/fcitx5".shellescape}
     expected_version=#{version.to_s.shellescape}
-    data_sha256="f7bed088fd8fc0d1a918f95b063c28f01c533ce50c745b4e29827d511f409b45"
+    data_sha256="1f006d01de29a1f351f25ee49992985ff2ed820c6cf45dbb42dc523d1f5f1b46"
     data_url="https://github.com/fcitx-contrib/fcitx5-plugins/releases/download/macos-#{version}/rime-any.tar.bz2"
     app="/Library/Input Methods/Fcitx5.app"
     payload="$stage/payload"

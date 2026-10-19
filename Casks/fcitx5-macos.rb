@@ -1,9 +1,9 @@
 cask "fcitx5-macos" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.4.0"
-  sha256 arm:   "0696b46ea02e5bcc403f2bdfad2017b68210250b918ed3e02a8a4bf66d57ff97",
-         intel: "747424323831da6f09247ebb55037951a0513b79f2ce0438befdab2ee5b95759"
+  version "0.4.1"
+  sha256 arm:   "e715327661e430ac6da4024cea4f80e8d04292f9563f3fb1b9f61c6d7c879be9",
+         intel: "d54b4aea365cb978184b688b886f1f5660c8013eff7421667ac2a5bd44e3f64d"
 
   url "https://github.com/fcitx/fcitx5-macos/releases/download/#{version}/Fcitx5-#{arch}.tar.bz2"
   name "Fcitx5 macOS"
